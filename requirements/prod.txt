@@ -10,3 +10,4 @@ requests==2.25.1
 sqlparse==0.4.1
 urllib3==1.26.3
 gunicorn==20.0.4
+django-environ=0.4.5

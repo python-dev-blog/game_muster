@@ -14,8 +14,8 @@ class IgdbApi:
 
     def __init__(self):
         self.__api_url = settings.IGDB_API_URL
-        self.__query_header = {'Client-ID': os.environ.get('IGDB_CLIENT_ID'),
-                               'Authorization': os.environ.get('IGDB_AUTH_KEY')}
+        self.__query_header = {'Client-ID': settings.env('IGDB_CLIENT_ID'),
+                               'Authorization': settings.env('IGDB_AUTH_KEY')}
 
     def get_games(self, limit=settings.RECORDS_LIMIT):
         url = self.__api_url + "games/"
