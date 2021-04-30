@@ -8,7 +8,7 @@ Run the following commands to bootstrap your environment:
 
     sudo apt-get install -y git python3-venv python3-pip vim
     git clone https://github.com/python-dev-blog/game_muster
-    cd game_muster_demo
+    cd game_muster
       
     python3 -m venv venv   
     source venv/bin/activate
