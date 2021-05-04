@@ -5,8 +5,9 @@
 ## Quickstart
 
 Run the following commands to bootstrap your environment:
-
-    sudo apt-get install -y git python3-venv python3-pip vim
+    
+    sudo apt egt update
+    sudo apt-get install -y git python3-dev python3-venv python3-pip supervisor nginx vim libpq-dev
     git clone https://github.com/python-dev-blog/game_muster
     cd game_muster
       
