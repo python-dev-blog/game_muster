@@ -2,6 +2,8 @@
 
 Тестовое приложение, отображающее список игр из IGDB API, созданное для демонстрации [подготовки django-приложения к деплойменту](https://www.youtube.com/watch?v=03egj6YEUFY)
 
+Демонтрация процесса деплоймента на виртуальную машину Google Cloud - [link](https://www.youtube.com/watch?v=dKnYNrBoqQc)
+
 ## Quickstart
 
 Run the following commands to bootstrap your environment:
@@ -81,7 +83,7 @@ Restart NGINX:
 Config file:
     
     [program:game_muster]
-    command = /home/user/game_muster/venv/bin/gunicorn game_muster.wsgi  -b 0.0.0.0:8000 -w 4 --timeout 90
+    command = /home/user/game_muster/venv/bin/gunicorn game_muster.wsgi  -b 127.0.0.1:8000 -w 4 --timeout 90
     autostart=true
     autorestart=true
     directory=/home/user/game_muster 
